@@ -1,24 +1,58 @@
-# README
+# Rehabilita - with Ruby on Rails 6.0.1 by [InterageASH](http://www.interage.in)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements
+- Ruby 2.6.5
+- Rails 6.0.1
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+#### Application
 
-* System dependencies
+```bash
+bundle install
+cp .env.example .env
+```
 
-* Configuration
+#### Database
 
-* Database creation
+```bash
+bin/rails db:drop db:create db:migrate db:seed
+```
 
-* Database initialization
+## Start application
 
-* How to run the test suite
+```bash
+bin/start
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+#### CI
 
-* Deployment instructions
+```bash
+bin/ci
+```
 
-* ...
+#### Brakeman
+
+```bash
+bin/brakeman
+```
+
+#### Rubocop
+
+```bash
+bin/rubocop -D -E -S # to verify
+# or
+bin/rubocop -D -E -S --auto-correct # to verify and fix
+```
+
+#### ERB Lint
+
+```bash
+bin/erblint app/views
+```
+
+#### Rspec
+
+```bash
+bin/rspec
+```
