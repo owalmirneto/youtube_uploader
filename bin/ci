@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo -e "\e[1;36m$ bin/brakeman \e[0m"
+bin/brakeman
+
+echo -e "\e[1;36m$ bin/rubocop \e[0m"
+bin/rubocop
+
+echo -e "\e[1;36m$ bin/erblint app/views \e[0m"
+bin/erblint app/views
+
+echo -e "\e[1;36m$ bin/rspec \e[0m"
+bin/rspec

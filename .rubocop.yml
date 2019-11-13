@@ -1,0 +1,38 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Metrics/LineLength:
+  Exclude:
+    - config/initializers/**/*
+    - config/environments/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/initializers/**/*
+    - config/environments/**/*
+    - spec/controllers/**/*
+
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - Rakefile
+    - bin/**/*
+    - db/migrate/**/*
+    - db/schema.rb
+    - db/seeds.rb
+    - db/seeds/**/*
+    - vendor/**/*
