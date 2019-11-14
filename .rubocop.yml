@@ -36,3 +36,4 @@ AllCops:
     - db/seeds.rb
     - db/seeds/**/*
     - vendor/**/*
+    - node_modules/**/*

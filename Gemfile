@@ -56,7 +56,7 @@ group :development, :test do
 end
 
 group :test do
-  # https://github.com/rspec/rspec-rails
+  # https://github.com/rspec/rspec-rails#installation
   gem 'rspec-rails', '~> 3.9'
   # https://github.com/thoughtbot/shoulda-matchers
   gem 'shoulda-matchers', '~> 4.1', '>= 4.1.2'
