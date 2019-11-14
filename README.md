@@ -48,7 +48,9 @@ bin/rubocop -D -E -S --auto-correct # to verify and fix
 #### ERB Lint
 
 ```bash
-bin/erblint app/views
+bin/erblint app/views # to verify
+# or
+bin/erblint app/views --autocorrect # to verify and fix
 ```
 
 #### Rspec

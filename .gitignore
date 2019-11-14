@@ -5,7 +5,6 @@
 ### Rails ###
 *.rbc
 capybara-*.html
-.rspec
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /public/system
