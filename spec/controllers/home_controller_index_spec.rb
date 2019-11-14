@@ -8,6 +8,10 @@ describe HomeController do
       expect(response).to be_successful
     end
 
+    it 'renders the layout application' do
+      expect(response).to render_template(layout: :application)
+    end
+
     it 'renders the index template' do
       expect(response).to render_template(:index)
     end
