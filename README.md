@@ -1,4 +1,4 @@
-# Rehabilita - with Ruby on Rails 6.0.1 by [InterageASH](http://www.interage.in)
+# Partners - with Ruby on Rails 6.0.1 by [InterageASH](http://www.interage.in)
 
 ## Requirements
 - Ruby 2.6.5

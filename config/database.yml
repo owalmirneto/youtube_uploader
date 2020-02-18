@@ -6,8 +6,8 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV.fetch('DATABASE_NAME', 'natalia_rehabilita') %>_development
+  database: <%= ENV.fetch('DATABASE_NAME', 'voltz_partners') %>_development
 
 test:
   <<: *default
-  database: <%= ENV.fetch('DATABASE_NAME', 'natalia_rehabilita') %>_test
+  database: <%= ENV.fetch('DATABASE_NAME', 'voltz_partners') %>_test
