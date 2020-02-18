@@ -15,7 +15,7 @@ Style/SymbolArray:
 Style/WordArray:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Exclude:
     - config/initializers/**/*
     - config/environments/**/*
