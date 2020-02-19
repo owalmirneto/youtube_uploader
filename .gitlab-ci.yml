@@ -1,0 +1,27 @@
+stages:
+  - build
+
+specs:
+  stage: build
+  image: registry.gitlab.com/interage/docker-hub/ruby-for-rails-6:2.6.5
+  cache:
+    paths:
+      - vendor/ruby
+      - node_modules
+  services:
+    - postgres:11.6-alpine
+  variables:
+    TZ: 'America/Recife'
+    RAILS_ENV: test
+    DATABASE_HOST: postgres
+  before_script:
+    - ruby --version
+    - bin/bundle --version
+    - bin/bundle install --path vendor
+    - apk add --update yarn
+    - bin/yarn --version
+    - bin/rails yarn:install
+    - bin/rails webpacker:compile NODE_ENV=test
+    - bin/rails db:setup db:test:prepare --trace
+  script:
+    - bin/ci
