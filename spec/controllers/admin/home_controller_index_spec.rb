@@ -2,6 +2,8 @@
 
 module Admin
   describe HomeController do
+    before { login_manager_user }
+
     describe 'GET index' do
       before { get :index }
 
