@@ -1,0 +1,54 @@
+pt-BR:
+  boolean:
+    truly: 'Sim'
+    falsely: 'Não'
+
+  index:
+    actions: Ações
+    not_found: Nenhum registro foi encontrado
+    model:
+      male:
+        not_found: Nenhum %{model} foi encontrado
+      female:
+        not_found: Nenhuma %{model} foi encontrada
+
+  bootstrap:
+    subtitle:
+      info: Informação
+      warning: Atenção
+      success: Sucesso
+      danger: Erro
+
+  menu:
+    default:
+      index: Listar
+      create: Criar
+      update: Editar
+      show: Mostrar
+      destroy: Apagar
+
+    links:
+      new: Adicionar %{model}
+      show: Ver
+      edit: Editar
+      destroy: Apagar
+      cancel: Cancelar
+      duplicate: Duplicar
+      back: Voltar
+
+  controllers:
+    create:
+      success: Criado com sucesso
+      error: Erro ao tentar criar
+    update:
+      success: Alterado com sucesso
+      error: Erro ao tentar alterar
+    duplicate:
+      success: Duplicado com sucesso
+      error: Erro ao tentar duplicar
+    destroy:
+      success: Excluído com sucesso
+      error: Erro ao tentar excluir
+    ordinate:
+      success: Ordenado com sucesso
+      error: Erro ao tentar ordenar

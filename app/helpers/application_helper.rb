@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 module ApplicationHelper
+  def format_seconds(seconds)
+    t('time.seconds.short', count: seconds)
+  end
+
   def app_page_title(area = '')
     "#{page_title}#{area}#{app_name}"
   end
