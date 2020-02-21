@@ -14,7 +14,7 @@ module ApplicationHelper
   end
 
   def page_title
-    content_for?(:page_title) ? "#{yield(:page_title)} » " : ''
+    content_for?(:page_title) ? "#{content_for(:page_title)} » " : ''
   end
 
   def app_name
