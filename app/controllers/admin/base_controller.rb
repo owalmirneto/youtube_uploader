@@ -2,6 +2,12 @@
 
 module Admin
   class BaseController < ::AuthController
-    layout 'admin'
+    before_action :check_user_manager!
+
+    private
+
+    def check_user_manager!
+      redirect_to root_path unless current_user.manager?
+    end
   end
 end
