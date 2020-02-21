@@ -1,3 +1,3 @@
 require('./preload');
 
-import('styles/devise');
+import('stylesheets/devise');
