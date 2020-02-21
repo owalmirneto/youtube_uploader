@@ -27,6 +27,8 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 # https://gitlab.com/interage/patterns/query#usage
 gem 'interage-query', '~> 0.1.2'
+# https://github.com/rails-api/active_model_serializers/tree/0-10-stable#installation
+gem 'active_model_serializers', '~> 0.10.10'
 # https://github.com/kaminari/kaminari#installation
 gem 'kaminari', '~> 1.2'
 
