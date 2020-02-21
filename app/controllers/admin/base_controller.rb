@@ -4,6 +4,8 @@ module Admin
   class BaseController < ::AuthController
     before_action :check_user_manager!
 
+    layout 'admin'
+
     private
 
     def check_user_manager!
