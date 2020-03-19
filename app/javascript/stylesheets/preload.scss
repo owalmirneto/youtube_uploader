@@ -27,4 +27,7 @@ body {
   h6, .h6 {
     font-size: 1.5em;
   }
+  .pagination .page-item {
+    white-space: nowrap;
+  }
 }
