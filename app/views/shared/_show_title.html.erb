@@ -1,0 +1,9 @@
+<% content_for(:page_title, t("titles.show.#{gender}", model: tm(resource))) %>
+
+<% content_for :body_page_title do %>
+  <div class="row">
+    <div class="col-12">
+      <h1><%= t("titles.show.#{gender}", model: tm(resource)) %></h1>
+    </div>
+  </div>
+<% end %>
