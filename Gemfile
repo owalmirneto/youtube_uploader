@@ -31,7 +31,11 @@ gem 'interage-query', '~> 0.1.2'
 gem 'active_model_serializers', '~> 0.10.10'
 # https://github.com/kaminari/kaminari#installation
 gem 'kaminari', '~> 1.2'
-# https://github.com/amatsuda/active_decorator#examples
+# https://github.com/holidays/holidays#usage
+gem 'holidays', '~> 8.1'
+# https://github.com/bokmann/business_time#install-the-gem-
+gem 'business_time', '~> 0.9.3'
+# https://github.com/amatsuda/active_decorator
 gem 'active_decorator', '~> 1.3', '>= 1.3.2'
 
 group :development, :test do
