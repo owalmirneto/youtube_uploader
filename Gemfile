@@ -31,6 +31,8 @@ gem 'interage-query', '~> 0.1.2'
 gem 'active_model_serializers', '~> 0.10.10'
 # https://github.com/kaminari/kaminari#installation
 gem 'kaminari', '~> 1.2'
+# https://github.com/amatsuda/active_decorator#examples
+gem 'active_decorator', '~> 1.3', '>= 1.3.2'
 
 group :development, :test do
   # https://github.com/bkeepers/dotenv#rails
