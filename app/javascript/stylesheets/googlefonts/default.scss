@@ -1,0 +1,18 @@
+@import 'googlefonts/google-sans';
+@import 'googlefonts/roboto';
+
+body {
+  h1, .h1, h2, .h2, h3, .h3,
+  h4, .h4, h5, .h5, h6, .h6,
+  .navbar-brand, .sidebar-sticky *:not(.fa), .btn {
+    font-family: 'Google Sans', sans-serif !important;
+  }
+
+  *:not(.fa) {
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  }
+
+  .form-filter * {
+    margin: 10px 20px 20px 0px;
+  }
+}
