@@ -1,0 +1,13 @@
+<% content_for(:page_title, page_title) %>
+
+<% content_for :body_page_title do %>
+  <div class="row">
+    <div class="col-<%= local_assigns[:link].blank? ? 12 : 8 %>">
+      <h1><%= page_title %></h1>
+    </div>
+
+    <div class="col-4 text-right">
+      <%= local_assigns[:link] %>
+    </div>
+  </div>
+<% end %>

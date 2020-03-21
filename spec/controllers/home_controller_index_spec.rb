@@ -17,7 +17,7 @@ describe HomeController do
     end
 
     it 'has a page title' do
-      expect(response.body).to have_css('h1', text: 'Home')
+      expect(response.body).to have_css('h1', text: t('home.index.title'))
     end
   end
 end

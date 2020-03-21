@@ -20,7 +20,8 @@ module Admin
       end
 
       it 'has a page title' do
-        expect(response.body).to have_css('h1', text: 'ADMIN::Home')
+        expect(response.body)
+          .to have_css('h1', text: t('admin.home.index.title'))
       end
     end
   end
