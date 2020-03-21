@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -e
+
+ENV=$1;
+
+if [ "$ENV" != 'production' ] && [ "$ENV" != 'staging' ]; then
+  echo -e "Use '\e[1;96mbin/console staging\e[0m' or '\e[1;96mbin/console production\e[0m'";
+  exit 1;
+fi
+
+echo -e "\e[1;34m> Restarting $ENV server...\e[0m";
+EXECUTE_RESTART="heroku run rails c -r $ENV";
+echo -e "\e[1;96m$ $EXECUTE_RESTART\e[0m";
+$EXECUTE_RESTART;
+
+echo -e "\n\e[1;32m> The ${ENV} console has been canceled.\e[0m";

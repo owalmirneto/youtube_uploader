@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -e
+
+ENV=$1;
+
+if [ "$ENV" != 'production' ] && [ "$ENV" != 'staging' ]; then
+  echo -e "Use '\e[1;96mbin/deploy staging\e[0m' or '\e[1;96mbin/deploy production\e[0m'";
+  exit 1;
+fi
+
+BRANCH=master;
+
+if [ "$ENV" == 'staging' ]; then
+  BRANCH=$(git rev-parse --abbrev-ref HEAD);
+fi
+
+echo -e "\e[1;34m> Deploying $ENV server...\e[0m";
+EXECUTE_DEPLOY="git push $ENV $BRANCH:master";
+echo -e "\e[1;96m$ $EXECUTE_DEPLOY\e[0m";
+$EXECUTE_DEPLOY;
+
+echo -e "\n\e[1;34m> Migrating $ENV database...\e[0m";
+EXECUTE_MIGRATE="heroku run rails db:migrate -r $ENV";
+echo -e "\e[1;96m$ $EXECUTE_MIGRATE\e[0m";
+$EXECUTE_MIGRATE;
+
+echo -e "\n\e[1;32m> ${ENV^} server deployed and migrated successfully.\e[0m";
