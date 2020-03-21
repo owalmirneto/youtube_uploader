@@ -3,7 +3,7 @@
 module FlashMessageHelper
   def flash_messages
     messages ||= flashes.map do |type, message|
-      bootstrap_alert(type, message)
+      bootstrap_alert(handle_type(type), message)
     end
 
     safe_join(messages || [])
@@ -11,5 +11,9 @@ module FlashMessageHelper
 
   def flashes
     flash.to_h.symbolize_keys
+  end
+
+  def handle_type(type)
+    type == :notice ? :success : type
   end
 end
