@@ -19,6 +19,11 @@ pt-BR:
       success: Sucesso
       danger: Erro
 
+  buttons:
+    cocoon:
+      add: + adicionar
+      remove: x excluir
+
   menu:
     default:
       index: Listar
