@@ -22,6 +22,6 @@ FactoryBot.define do
 
     factory :invalid_user, traits: [:invalid]
     factory :manager_user, traits: [:manager]
-    factory :session_user, traits: [:know_password, :manager]
+    factory :session_user, traits: [:know_password]
   end
 end

@@ -2,7 +2,7 @@
 
 module Admin
   describe HomeController do
-    before { login_manager_user }
+    include_context 'when user logged', :manager
 
     describe 'GET index' do
       before { get :index }
