@@ -6,7 +6,7 @@ module ApplicationHelper
   end
 
   def app_page_title(area = '')
-    "#{page_title}#{area}#{app_name}"
+    "#{env_name_upcase}#{page_title}#{area}#{app_name}"
   end
 
   def admin_page_title
@@ -23,5 +23,11 @@ module ApplicationHelper
 
   def app_name
     ENV.fetch('APP_NAME', Rails.application.class.module_parent_name)
+  end
+
+  def env_name_upcase
+    return if ENV['ENV_NAME'].blank?
+
+    "[#{ENV['ENV_NAME'].upcase}] "
   end
 end
