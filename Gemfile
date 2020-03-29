@@ -14,7 +14,7 @@ gem 'pg', '~> 1.2', '>= 1.2.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.2', '>= 4.2.2'
+gem 'webpacker', '~> 5.0', '>= 5.0.1'
 # Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 # https://github.com/Shopify/bootsnap#usage
@@ -50,7 +50,7 @@ group :development, :test do
   # https://github.com/Shopify/erb-lint#installation
   gem 'erb_lint', '~> 0.0.31', require: false
   # https://github.com/rubocop-hq/rubocop-rails#usage
-  gem 'rubocop-rails', '~> 2.4', '>= 2.4.2'
+  gem 'rubocop-rails', '~> 2.5'
   # https://github.com/rubocop-hq/rubocop-performance#usage
   gem 'rubocop-performance', '~> 1.5', '>= 1.5.2'
   # https://github.com/backus/rubocop-rspec
@@ -58,7 +58,7 @@ group :development, :test do
   # https://github.com/thoughtbot/factory_bot_rails
   gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
   # https://github.com/stympy/faker
-  gem 'faker', '~> 2.10', '>= 2.10.2'
+  gem 'faker', '~> 2.11'
   # https://github.com/teamcapybara/capybara#setup
   gem 'capybara', '~> 3.31'
 end
