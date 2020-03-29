@@ -79,3 +79,8 @@ group :development do
   gem 'spring', '~> 2.1'
   gem 'spring-watcher-listen', '~> 2.0', '>= 2.0.1'
 end
+
+group :production do
+  # https://github.com/aws/aws-sdk-ruby#installation
+  gem 'aws-sdk-s3', '~> 1.61', '>= 1.61.1', require: false
+end
