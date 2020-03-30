@@ -1,5 +1,5 @@
 {
-  "name": "partners",
+  "name": "youtube_uploader",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
