@@ -37,6 +37,10 @@ gem 'holidays', '~> 8.1'
 gem 'business_time', '~> 0.9.3'
 # https://github.com/amatsuda/active_decorator
 gem 'active_decorator', '~> 1.3', '>= 1.3.2'
+# https://github.com/zquestz/omniauth-google-oauth2#usage
+gem 'omniauth-google-oauth2', '~> 0.8.0'
+# https://github.com/Fullscreen/yt#available-resources
+gem 'yt', '~> 0.32.6'
 
 group :development, :test do
   # https://github.com/bkeepers/dotenv#rails

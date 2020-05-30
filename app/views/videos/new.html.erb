@@ -1,0 +1,7 @@
+<%= render 'shared/body_page_title', page_title: 'Adicionar vídeo' %>
+
+<% if google_user.present? %>
+  <%= render 'form' %>
+<% else %>
+  <p><%= link_to 'Autorize', '/auth/google_oauth2' %> através da sua conta do Google a continuar.</p>
+<% end %>
