@@ -8,7 +8,7 @@ ruby File.read('.ruby-version').strip
 # https://github.com/rails/rails#getting-started
 gem 'rails', '~> 6.0', '>= 6.0.2.2'
 # https://github.com/puma/puma#quick-start
-gem 'puma', '~> 4.3', '>= 4.3.3'
+gem 'puma', '~> 4.3'
 # https://github.com/ged/ruby-pg#how-to-install
 gem 'pg', '~> 1.2', '>= 1.2.3'
 # Use SCSS for stylesheets
